@@ -23,15 +23,18 @@ if (zipLength === 5) {
 		document.getElementById("zone").innerHTML = "Within service area.";
 		document.getElementById("notZone").innerHTML = "";
 		document.getElementById("notZip").innerHTML = "";
+		outsideOfZip = false; 
 	} else {
 		document.getElementById("notZone").innerHTML = "Outside of service area.";
 		document.getElementById("zone").innerHTML = "";
 		document.getElementById("notZip").innerHTML = "";
+		outsideOfZip = true; 
 	}
 	}
-	} else {
+} else {
 		document.getElementById("notZip").innerHTML = "Incorrect format.";
 		document.getElementById("zone").innerHTML = "";
 		document.getElementById("notZone").innerHTML = "";
+		outsideOfZip = true; 
 	}
 }; 

@@ -3,6 +3,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+var outsideOfZip = true; 
 
 (function($) {
 
@@ -34,6 +35,7 @@
 	// Forms.
 
 		// Hack: Activate non-input submits.
+		
 			$('form').on('click', '.submit', function(event) {
 
 				// Stop propagation, default.
@@ -41,9 +43,14 @@
 					event.preventDefault();
 
 				// Submit form.
+					if (outsideOfZip === false) {
 					$(this).parents('form').submit();
+					} else {
+					alert("We do not serve this area. Please check to make sure that the zip code is correct.")
+					}
 
 			});
+			
 			
 	// Sidebar.
 		if ($sidebar.length > 0) {
