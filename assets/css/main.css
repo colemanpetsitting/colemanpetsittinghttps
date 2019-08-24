@@ -27,8 +27,14 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+	
+#medicine {
+	background-color: rgba(192, 192, 192, 0.4); 
+}
 
-
+#medicineDescription {
+	width: 100%; 
+}
 #zipChecker {
 width: 50%; 
 }
