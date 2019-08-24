@@ -12,7 +12,7 @@ input.addEventListener("keyup", function(event) {
   }
   }); 
   }
-
+  
 function checkZip(){
 var zipCode = document.getElementById('zip').value; 
 var zipLength = zipCode.length;

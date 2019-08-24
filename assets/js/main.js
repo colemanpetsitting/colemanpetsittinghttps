@@ -4,7 +4,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 var outsideOfZip = true; 
-
 (function($) {
 
 
@@ -31,6 +30,7 @@ var outsideOfZip = true;
 				$body.removeClass('is-preload');
 			}, 100);
 		});
+
 
 	// Forms.
 
@@ -194,5 +194,4 @@ var outsideOfZip = true;
 
 				}
 			});
-			
 })(jQuery);
