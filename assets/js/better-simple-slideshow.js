@@ -126,16 +126,6 @@ var makeBSS = function (el, options) {
                 } // end pauseonhover
                 
             },
-            addFullScreen: function(el){
-                var that = this,
-                fsControl = document.createElement("span");
-                
-                fsControl.classList.add('bss-fullscreen');
-                el.appendChild(fsControl);
-                el.querySelector('.bss-fullscreen').addEventListener('click', function () {
-                    that.toggleFullScreen(el);
-                }, false);
-            },
             addSwipe: function(el){
                 var that = this,
                     ht = new Hammer(el);

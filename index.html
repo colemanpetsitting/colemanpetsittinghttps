@@ -73,10 +73,10 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Ashley Coleman - Owner</h2>
-									<p>Experienced veterinary technician who loves to keep pets happy, healthy, and safe.</p>
-									<ul class="actions">
+									<p>Experienced veterinary professional who loves to keep pets happy, healthy, and safe.</p>
+									<!-- button <ul class="actions">
 										<li><a href="AshleyOwner.html" class="button">Learn more about Ashley</a></li>
-									</ul>
+									</ul> -->
 								</div>
 							</div>
 						</section>
@@ -90,24 +90,24 @@
 								<section>
 									<span class="icon solid major fa-home"></span>
 									<h3>In-Home Petsitting</h3>
-									<p>Care for dogs and cats in the comfort of your own home, whether you're at work or on vacation. <br> <br> Includes feeding, walking, litter change, love, and play.</p>
+									<p>Care for dogs and cats in the comfort of your own home, whether you're at work or on vacation.<br> <br> Includes feeding, walking, litter change, love, and play.</p>
 								</section>
 								<section>
 									<span class="icon solid major fa-dog"></span>
-									<h3>Dog Walking</h3>
-									<p>Shorter or longer walks, depending on your dog's needs.</p>
+									<h3>Dog Boarding</h3>
+									<p>Boarding for dogs under 20 pounds. <br> <br> Includes feeding, walking, love, and play. </p>
 								</section>
 							</div>
 								<div id="medicine" class="features">
 								<section id="medicineDescription">
 									<span class="icon solid major fa-first-aid"></span>
 									<h3>Medication Administration</h3>
-									<p>If your dog or cat requires it, medicine can be given during a dog walk visit or during in-home petsitting visit.</p>
+									<p>If your dog or cat requires it, medicine can be given during in-home petsitting visits or while boarding.</p>
 								</section>
 								</div>
-							<ul class="actions">
+							<!-- button<ul class="actions">
 								<li><a href="learnMore.html" class="button">Learn more</a></li>
-							</ul>
+							</ul> -->
 						</div>
 					</section>
 <!-- Rates -->
@@ -122,36 +122,22 @@
 											</thead>
 											<tbody>
 												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
+													<td>In-Home Petsitting</td>
+													<td>Per once-daily visit.</td>
+													<td>$15</td>
 												</tr>
 												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
+													<td>In-Home Petsitting</td>
+													<td>Per twice-daily visit.</td>
+													<td>$20</td>
 												</tr>
 												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
+													<td>Overnight Boarding</td>
+													<td>Per day.</td>
+													<td>$25</td>
 												</tr>
 											</tbody>
 											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
 											</tfoot>
 										</table>
 									</div>
@@ -164,7 +150,7 @@
 											<div id="zipChecker">
 												<label for="zip">Zip</label>
 												<input type="text" name="zip" id="zip" onsubmit="checkZip()"/>
-													<button class="button fit" id="checkZipButton" onclick="checkZip()">Check Zip</button>
+													<button class="button fit" id="checkZipButton" onclick="checkZip()">Check if in Service Area</button>
 													<p><span id="zone"></span><span id="notZone"></span><span id="notZip"></span></p>
 											</div>
 											</div>
@@ -183,6 +169,14 @@
 													<option value="1">5 Dogs</option>
 												</select>
 											</div>
+											<select name="serviceDog" id="serviceDog">
+													<option value="">- Service -</option>
+													<option value="Not Applicable">Not Applicable</option>
+													<option value="Once-Daily Petsitting">Once-Daily Petsitting</option>
+													<option value="Twice-Daily Petsitting">Twice-Daily Petsitting</option>
+													<option value="Overnight Boardin">Overnight Boarding</option>
+												</select>
+												<br>
 											<div class="col-12">
 												<select name="catsNumber" id="catsNumber">
 													<option value="">- Number of Cats -</option>
@@ -194,6 +188,12 @@
 													<option value="2">5 Cats</option>
 												</select>
 											</div>
+											<select name="serviceCat" id="serviceCat">
+													<option value="">- Service -</option>
+													<option value="Not Applicable">Not Applicable</option>
+													<option value="Once-Daily Petsitting">Once-Daily Petsitting</option>
+													<option value="Twice-Daily Petsitting">Twice-Daily Petsitting</option>
+												</select>
 											<br>
 										<div class="field half">
 											<label for="dates">Date(s)</label>
@@ -235,18 +235,14 @@
 											<h3>Email</h3>
 											<a href="mailto:info@colemanpetsitting.com">info@colemanpetsitting.com</a>
 										</li>
-										<!-- <li>
+										<li>
 											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>  -->
+											<span>(856) 471-7446</span>
+										</li>  
 										<li>
 											<h3>Social</h3>
 											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+												<li><a href="https://www.instagram.com/colemanpetsitting/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 											</ul>
 										</li>
 									</ul>
